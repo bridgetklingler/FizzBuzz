@@ -20,6 +20,7 @@ namespace FizzBuzz.Tests
             var result = fizzBuzz.Get(2);
             Assert.Equal("2", result);
         }
+
         [Fact]
         public void Get_Returns_for_3()
         {
@@ -27,12 +28,21 @@ namespace FizzBuzz.Tests
             var result = fizzBuzz.Get(6);
             Assert.Equal("Fizz", result);
         }
+
         [Fact]
         public void Get_Returns_For_5()
         {
             var fizzBuzz = new FizzBuzz();
-            var result = fizzBuzz.Get(5);
+            var result = fizzBuzz.Get(10);
             Assert.Equal("Buzz", result);
+        }
+
+        [Fact]
+        public void Get_Return_For_15()
+        {
+            var fizzBuzz = new FizzBuzz();
+            var result = fizzBuzz.Get(15);
+            Assert.Equal("FizzBuzz", result);
         }
 
 
